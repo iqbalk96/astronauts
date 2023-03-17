@@ -1,0 +1,98 @@
+.albums-hero {
+    height: 500px;
+    object-fit: cover;
+}
+
+.util-page-constructions {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bg-active {
+    background-color: #171B26;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.bg-theme {
+    background-color: #0A0D14 !important;
+}
+
+.bg-theme * {
+    color: #FFF !important;
+}
+
+
+.bg-space {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-space::before {
+    content: "";
+    background-image: url('../../assets/aurora.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.40;
+}
+
+.title-orange {
+    color: #F62E2E !important;
+}
+
+.paragraph-title {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-weight: 100;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 425px) {
+    .albums-hero {
+        height: 300px;
+    }
+
+    .btn-home-responsive {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bg-space {
+        height: 100%;
+    }
+}
